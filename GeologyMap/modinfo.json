@@ -8,7 +8,7 @@
         "cooli2"
     ],
     "description": "Adds a new map layer that shows the first rock layer beneath the soil",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
         "game": "1.21.0"
     }

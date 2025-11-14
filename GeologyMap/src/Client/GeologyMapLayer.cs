@@ -514,8 +514,9 @@ public class GeologyMapLayer : RGBMapLayer
 
     private bool isBlockValid(Block block)
     {
-        return block.BlockMaterial == EnumBlockMaterial.Stone
-            && block.Code.PathStartsWith("rock-")
+        return block != null
+            && block.BlockMaterial == EnumBlockMaterial.Stone
+            && (block.Code?.PathStartsWith("rock-") ?? false)
             && !ignoredBlockCodes.Contains(block.Code);
     }
 }
