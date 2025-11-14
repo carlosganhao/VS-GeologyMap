@@ -1,0 +1,15 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "geologymap",
+    "name": "Geology Map",
+    "side": "Client",
+    "authors": [
+        "cooli2"
+    ],
+    "description": "Adds a new map layer that shows the first rock layer beneath the soil",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.21.0"
+    }
+}
