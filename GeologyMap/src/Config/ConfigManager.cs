@@ -14,6 +14,7 @@ public static class ConfigManager
             if (ConfigInstance == null)
             {
                 ConfigInstance = new GeologyMapConfig();
+                ConfigInstance.SetDefaults();
             }
 
             api.StoreModConfig<GeologyMapConfig>(ConfigInstance, configPath);
@@ -23,6 +24,7 @@ public static class ConfigManager
             api.Logger.Error("[Geology Map] - Could not load config! Loading default settings instead.");
             api.Logger.Error(e);
             ConfigInstance = new GeologyMapConfig();
+            ConfigInstance.SetDefaults();
         }
     }
 
